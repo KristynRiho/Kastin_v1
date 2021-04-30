@@ -1,0 +1,227 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+$color-main: rgb(39, 2, 1);
+$color-red: rgba(219, 5, 5, 0.795);
+$color-bg: rgb(252, 249, 252);
+$font-main: 'Nunito', sans-serif;
+$spacer-big: 30px;
+$spacer-small: 10px;
+
+body {
+  font-family: $font-main;
+  color: rgb(39, 2, 1);
+  background-color: $color-bg;
+}
+/* HEADER ************* */
+.logo {
+  width: 150px;
+  margin: 5px auto;
+  display: block;
+}
+/* navigation */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 18px;
+  margin: $spacer-small auto;
+
+  &__item {
+    list-style-type: none;
+    letter-spacing: 1px;
+    padding: $spacer-small;
+    flex: 0 0 50%;
+
+    &--last {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $color-main;
+      padding: $spacer-small;
+      border-radius: 50px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $color-red;
+        color: $color-bg;
+
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+// MAIN ******************************
+
+// headings
+.heading {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 1.5px;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: $spacer-small auto;
+    width: 200px;
+    height: 2px;
+    background-color: $color-red;
+  }
+}
+
+// news, products
+.news,
+.products {
+  text-align: center;
+  padding: 15px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.product-news {
+  color: $color-main;
+}
+
+.fig {
+  width: 300px;
+  height: 300px;
+  border: 1px solid $color-main;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.603);
+  margin: 30px auto 0px auto;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &-1 {
+    background-image: url(../img/kabelky.jpg);
+  }
+  &-2 {
+    background-image: url(../img/batohy.jpg);
+  }
+  &-3 {
+    background-image: url(../img/penezenky.jpg);
+  }
+  &-4 {
+    background-image: url(../img/doplnky.jpg);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 7px 7px 15px gray;
+  }
+}
+.products__container figcaption {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+.item {
+  text-decoration: none;
+}
+
+// about.html
+#about {
+  margin-top: $spacer-big;
+}
+.about-container {
+  text-align: center;
+  padding: 20px;
+
+  & p {
+    margin-bottom: 20px;
+  }
+
+  &__item img {
+    border-radius: 0px 50px 0px 50px;
+  }
+}
+
+// FOOTER *************************
+footer {
+  margin-top: $spacer-big + 10;
+  padding: $spacer-big;
+  background-color: $color-red;
+  color: $color-bg;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+
+  & a {
+    color: $color-bg;
+  }
+}
+// media queries
+@media screen and (min-width: 560px) {
+  .menu {
+    &__item {
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  .fig {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .products__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 0 auto;
+  }
+  .products__container figcaption {
+    font-size: 26px;
+  }
+
+  .item {
+    flex: 0 0 calc(100% - 30px) / 2;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .menu {
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+
+    &__item {
+      flex: 0 1 auto;
+    }
+  }
+
+  .about-container {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .footer-fix {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
