@@ -24,8 +24,14 @@ body {
 /* HEADER ************* */
 .logo {
   width: 150px;
-  margin: 5px auto;
+  margin: 10px auto;
   display: block;
+}
+
+.intro__item--img {
+  border-bottom: 1px solid $color-red;
+  width: 70%;
+  margin: 0 auto;
 }
 /* navigation */
 
@@ -97,6 +103,11 @@ body {
   color: $color-main;
 }
 
+.fab {
+  color: $color-main;
+  font-size: 20px;
+}
+
 .fig {
   width: 300px;
   height: 300px;
@@ -145,9 +156,11 @@ body {
 #about {
   margin-top: $spacer-big;
 }
-.about-container {
+.about-container,
+.contact-container {
   text-align: center;
   padding: 20px;
+  margin-bottom: $spacer-big;
 
   & p {
     margin-bottom: 20px;
@@ -155,9 +168,72 @@ body {
 
   &__item img {
     border-radius: 0px 50px 0px 50px;
+    margin: 0px 10px 30px 30px;
   }
 }
 
+//contact.html
+.contact {
+  margin: 40px auto 0 auto;
+  max-width: 350px;
+}
+.contact__form {
+  width: 330px;
+  margin-bottom: $spacer-big;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $spacer-small;
+
+  & input {
+    width: 80%;
+    line-height: 2;
+    padding: 2px;
+  }
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  margin: $spacer-small;
+  margin-top: 20px;
+
+  & label {
+    text-align: left;
+    margin-bottom: $spacer-small;
+  }
+
+  & textarea {
+    padding: 2px;
+    font-size: 16px;
+  }
+}
+
+.contact__adress {
+  text-align: left;
+  margin-left: $spacer-small;
+
+  & li {
+    list-style-type: none;
+  }
+
+  & address {
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: $color-bg;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: $color-red;
+  border-radius: 50px;
+}
 // FOOTER *************************
 footer {
   margin-top: $spacer-big + 10;
@@ -214,14 +290,33 @@ footer {
   }
 
   .about-container {
-    max-width: 860px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
-  .footer-fix {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  .about-flex {
+    display: flex;
+    align-items: center;
   }
+
+  .about {
+    height: 100vh;
+  }
+
+  .contact-container {
+    width: 840px;
+    margin: 0 auto;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 800px;
+  }
+  // .footer-fix {
+  //   position: sticky;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  // }
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kastin | Kontakt</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-slide.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5df4230c0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--úvodní fotos + logo-->
+    <header class="intro">
+      <!-- logo -->
+      <div class="intro__item intro__item--img">
+        <img class="logo" src="img/logo.png" alt="logo Kastin" />
+      </div>
+      <!-- navigation -->
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a href="index.html#news">Aktuality</a></li>
+          <li class="menu__item"><a href="index.html#products">Výrobky</a></li>
+          <li class="menu__item"><a href="#photogallery">Fotogalerie</a></li>
+          <li class="menu__item"><a href="#">Recenze</a></li>
+          <li class="menu__item"><a href="about.html">Můj příběh</a></li>
+          <li class="menu__item"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-container" id="contact">
+        <h2 class="heading">Kontakt</h2>
+        <p>
+          Neváhejte se mě zeptat na cokoliv ohledně výroby, zakázek. Veškeré
+          vzkazy beru jako nezávazné, je důležité si nejprve ujasnit o co máte
+          zájem, jaký tvar, velikost výrobku byste rády, jakou látku zvolíme. Po
+          vzájemném upřesnění si výrobku a odsouhlasení si ceny, začnu brát
+          poptávku jako závaznout a začínají platit pravidla v
+          <a class="product-news" href="terms.html">obchodních podmínkách</a>.
+        </p>
+        <p>
+          Kontaktovat mě můžete jak přes kontaktní formulář, tak přes
+          <a
+            class="product-news"
+            href="https://www.facebook.com/kastin.cz/"
+            target="_blank"
+            >Facebook <i class="fab fa-facebook"></i></a
+          >.
+        </p>
+        <p>
+          Prosím nezlobte se na mě, když neodpovím ihned, zrovna nejspíš pracuji
+          na vašich zakázkách nebo se věnuji rodině. Zpravidla reaguji na zprávy
+          do 2-3 pracovních dnů.
+        </p>
+        <div class="contact">
+          <div class="contact__form">
+            <h4>Napište mi:</h4>
+            <form action="">
+              <div class="row">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" placeholder="Jméno" />
+              </div>
+
+              <div class="row">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+              </div>
+
+              <div class="area">
+                <label for="msg">Váš vzkaz:</label>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  cols="30"
+                  rows="10"
+                  placeholder="Zde je místo pro Váš vzkaz"
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">ODESLAT</button>
+            </form>
+          </div>
+
+          <div class="contact__adress">
+            <ul>
+              <address>
+                <li>Kastin Katka Burianová</li>
+                <li>Kunžak XX</li>
+                <li>377 XX</li>
+              </address>
+
+              <li>IČO: 321 00 05</li>
+              <li>
+                Najdete mne i na
+                <a
+                  class="product-news"
+                  href="https://www.facebook.com/kastin.cz/"
+                  target="_blank"
+                  >Facebooku <i class="fab fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2021, Kastin</p>
+      <a href="terms.html">Obchodní podmínky</a>
+    </footer>
+  </body>
+</html>

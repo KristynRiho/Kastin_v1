@@ -19,8 +19,14 @@ body {
 /* HEADER ************* */
 .logo {
   width: 150px;
-  margin: 5px auto;
+  margin: 10px auto;
   display: block;
+}
+
+.intro__item--img {
+  border-bottom: 1px solid rgba(219, 5, 5, 0.795);
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* navigation */
@@ -80,6 +86,11 @@ body {
   color: #270201;
 }
 
+.fab {
+  color: #270201;
+  font-size: 20px;
+}
+
 .fig {
   width: 300px;
   height: 300px;
@@ -124,15 +135,78 @@ body {
   margin-top: 30px;
 }
 
-.about-container {
+.about-container,
+.contact-container {
   text-align: center;
   padding: 20px;
+  margin-bottom: 30px;
 }
-.about-container p {
+.about-container p,
+.contact-container p {
   margin-bottom: 20px;
 }
-.about-container__item img {
+.about-container__item img,
+.contact-container__item img {
   border-radius: 0px 50px 0px 50px;
+  margin: 0px 10px 30px 30px;
+}
+
+.contact {
+  margin: 40px auto 0 auto;
+  max-width: 350px;
+}
+
+.contact__form {
+  width: 330px;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.row input {
+  width: 80%;
+  line-height: 2;
+  padding: 2px;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 20px;
+}
+.area label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.area textarea {
+  padding: 2px;
+  font-size: 16px;
+}
+
+.contact__adress {
+  text-align: left;
+  margin-left: 10px;
+}
+.contact__adress li {
+  list-style-type: none;
+}
+.contact__adress address {
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  color: #fcf9fc;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: rgba(219, 5, 5, 0.795);
+  border-radius: 50px;
 }
 
 footer {
@@ -185,14 +259,28 @@ footer a {
   }
 
   .about-container {
-    max-width: 860px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
-  .footer-fix {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  .about-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .about {
+    height: 100vh;
+  }
+
+  .contact-container {
+    width: 840px;
+    margin: 0 auto;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 800px;
   }
 }/*# sourceMappingURL=style.css.map */
