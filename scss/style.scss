@@ -21,6 +21,10 @@ body {
   color: rgb(39, 2, 1);
   background-color: $color-bg;
 }
+.bold {
+  font-weight: 700;
+}
+
 /* HEADER ************* */
 .logo {
   width: 100px;
@@ -233,7 +237,102 @@ body {
   margin-top: 10px;
   background-color: $color-red;
   border-radius: 50px;
+
+  &--product {
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    width: 300px;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: rgb(219, 5, 5);
+    }
+  }
 }
+
+//kabelky.html
+.kabelky {
+  padding: 20px;
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto;
+
+  & h3 {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: $color-main;
+  }
+}
+
+.patern {
+  margin: $spacer-big;
+  list-style-type: none;
+  line-height: 1.9;
+
+  & h4 {
+    font-size: 22px;
+  }
+
+  & li a {
+    // text-decoration: none;
+    color: $color-main;
+    padding: 5px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $color-red;
+      color: $color-bg;
+      border-radius: 50px;
+
+      transition: all 0.5s;
+    }
+  }
+}
+
+.box {
+  width: 300px;
+  margin: $spacer-big auto 0 auto;
+}
+
+.box-img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid $color-main;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.603);
+  margin: 5px auto;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &--1 {
+    background-image: url(../img/kab-vel.jpg);
+  }
+  &--2 {
+    background-image: url(../img/kab-str.jpg);
+  }
+  &--3 {
+    background-image: url(../img/kab-solagel.jpg);
+  }
+  &--4 {
+    background-image: url(../img/kab-maisie.jpg);
+  }
+  &--5 {
+    background-image: url(../img/kab-anabel.jpg);
+  }
+  &--6 {
+    background-image: url(../img/kab-aktovka.jpg);
+    background-position: left;
+  }
+}
+
 // FOOTER *************************
 footer {
   margin-top: $spacer-big + 10;
@@ -313,10 +412,17 @@ footer {
     justify-content: space-evenly;
     max-width: 800px;
   }
-  // .footer-fix {
-  //   position: sticky;
-  //   bottom: 0;
-  //   left: 0;
-  //   width: 100%;
-  // }
+
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box__text {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
