@@ -322,6 +322,7 @@ body {
   }
   &--3 {
     background-image: url(../img/kab-solagel.jpg);
+    background-position: bottom;
   }
   &--4 {
     background-image: url(../img/kab-maisie.jpg);
@@ -332,6 +333,20 @@ body {
   &--6 {
     background-image: url(../img/kab-aktovka.jpg);
     background-position: left;
+  }
+  &--bat1 {
+    background-image: url(../img/bat1.jpg);
+  }
+
+  &--bat2 {
+    background-image: url(../img/bat2.jpg);
+  }
+
+  &--bat3 {
+    background-image: url(../img/bat3.jpg);
+  }
+  &--bat4 {
+    background-image: url(../img/bat4.jpg);
   }
 }
 

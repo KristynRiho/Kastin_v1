@@ -286,6 +286,7 @@ body {
 }
 .box-img--3 {
   background-image: url(../img/kab-solagel.jpg);
+  background-position: bottom;
 }
 .box-img--4 {
   background-image: url(../img/kab-maisie.jpg);
@@ -296,6 +297,18 @@ body {
 .box-img--6 {
   background-image: url(../img/kab-aktovka.jpg);
   background-position: left;
+}
+.box-img--bat1 {
+  background-image: url(../img/bat1.jpg);
+}
+.box-img--bat2 {
+  background-image: url(../img/bat2.jpg);
+}
+.box-img--bat3 {
+  background-image: url(../img/bat3.jpg);
+}
+.box-img--bat4 {
+  background-image: url(../img/bat4.jpg);
 }
 
 footer {
