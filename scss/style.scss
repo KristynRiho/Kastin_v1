@@ -252,8 +252,11 @@ body {
   }
 }
 
-//kabelky.html
-.kabelky {
+//kabelky.html, batohy.html
+.kabelky,
+.batohy,
+.penezenky,
+.doplnky {
   padding: 20px;
   text-align: center;
   max-width: 840px;
@@ -279,7 +282,6 @@ body {
   }
 
   & li a {
-    // text-decoration: none;
     color: $color-main;
     padding: 5px;
 
