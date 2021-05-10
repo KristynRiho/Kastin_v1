@@ -117,7 +117,7 @@ body {
   height: 300px;
   border: 1px solid $color-main;
   border-radius: 4px;
-  box-shadow: 1px 1px 5px rgba(26, 25, 25, 0.603);
+  box-shadow: 2px 2px 10px rgba(26, 25, 25, 0.603);
   margin: 30px auto 0px auto;
 
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
   &:hover,
   &:focus,
   &:active {
-    box-shadow: 7px 7px 15px gray;
+    box-shadow: 10px 10px 20px gray;
   }
 }
 .products__container figcaption {
@@ -368,6 +368,31 @@ body {
   }
 }
 
+//recenze
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 200px;
+  border: 1px solid $color-red;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 10px gray;
+}
+.fa-user-alt {
+  border: 2px solid $color-red;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 28px;
+  margin: 5px;
+}
+.card__item .card-text {
+  font-style: italic;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
 // FOOTER *************************
 footer {
   margin-top: $spacer-big + 10;
@@ -414,6 +439,11 @@ footer {
 
   .item {
     flex: 0 0 calc(100% - 30px) / 2;
+  }
+
+  .card-box {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
