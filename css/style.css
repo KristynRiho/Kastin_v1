@@ -310,6 +310,18 @@ body {
 .box-img--bat4 {
   background-image: url(../img/bat4.jpg);
 }
+.box-img--pe1 {
+  background-image: url(../img/pen-xxl.jpg);
+}
+.box-img--pe2 {
+  background-image: url(../img/pe-velka.jpg);
+}
+.box-img--do1 {
+  background-image: url(../img/do1.jpg);
+}
+.box-img--do2 {
+  background-image: url(../img/do2.jpg);
+}
 
 .gallery {
   line-height: 0;
@@ -351,6 +363,28 @@ body {
   font-style: italic;
   margin-bottom: 0;
   margin-left: 10px;
+}
+
+.link-top {
+  padding-right: 30px;
+  display: block;
+  text-align: end;
+}
+
+.link-top__a img {
+  padding: 5px;
+  border: 3px solid rgba(219, 5, 5, 0.795);
+  border-radius: 10px;
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.link-top__a img:active,
+.link-top__a img:hover,
+.link-top__a img:focus {
+  border: 3px solid rgba(219, 5, 5, 0.795);
+  opacity: 1;
+  transform: scale(1);
 }
 
 footer {
@@ -454,6 +488,11 @@ footer a {
   .gallery {
     -moz-column-count: 3;
     column-count: 3;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .no-container {
+    max-width: 1150px;
   }
 }
 @media screen and (min-width: 1400px) {
